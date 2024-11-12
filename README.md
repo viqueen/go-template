@@ -1,12 +1,13 @@
 ## go-template
 
-Template to create a library in Golang.
+> TODO: description
 
 ---
 
 ### environment
 
 - Docker
+- Make
 - Golang
 
 ---
@@ -17,4 +18,10 @@ Template to create a library in Golang.
 
 ```bash
 make build
+```
+
+- generate mocks
+
+```bash
+make mocks
 ```
