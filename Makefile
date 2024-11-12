@@ -12,4 +12,4 @@ mocks:
 	docker run --rm \
 		--volume "${PWD}":/go/src \
 		--workdir /go/src \
-		viqueen/mockery:v2.46 --al
+		vektra/mockery:v2.46 --all

@@ -2,12 +2,12 @@ package pet_test
 
 import (
 	"github.com/stretchr/testify/assert"
-	"github.com/viqueen/go-template/pkg/pet"
+	"github.com/viqueen/go-template/pkg/pet/mocks"
 	"testing"
 )
 
 func TestProject(t *testing.T) {
-	want := "pet project"
-	got := pet.Project()
-	assert.Equal(t, want, got)
+	project := mocks.NewProject(t)
+	project.EXPECT().Get().Return("project")
+	assert.Equal(t, "project", project.Get())
 }

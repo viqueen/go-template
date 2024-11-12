@@ -1,5 +1,5 @@
 package pet
 
-func Project() string {
-	return "pet project"
+type Project interface {
+	Get() string
 }
