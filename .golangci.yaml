@@ -1,18 +1,18 @@
-linters:
-  enable:
-    - govet
-    - errcheck
-    - ineffassign
-    - staticcheck
-    - unused
-    - gosimple
-    - goconst
-    - typecheck
-    - gosec
-    - depguard
-    - gofmt
+version: "2"
 
-output:
-  formats:
-    - format: colored-line-number
-  sort-results: true
+formatters:
+  enable:
+    - gofmt
+    - goimports
+    - golines
+
+linters:
+  default: "all"
+  settings:
+    depguard:
+      rules:
+        main:
+          allow:
+            - $gostd
+            - github.com/viqueen/go-template
+            - github.com/stretchr/testify

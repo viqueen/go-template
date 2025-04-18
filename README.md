@@ -14,14 +14,20 @@
 
 ### housekeeping
 
-- build it
+- lint it and fix it
 
 ```bash
-make build
+make lint-fix
 ```
 
 - generate mocks
 
 ```bash
 make mocks
+```
+
+- build it
+
+```bash
+make build
 ```
