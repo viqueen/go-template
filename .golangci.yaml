@@ -16,3 +16,4 @@ linters:
             - $gostd
             - github.com/viqueen/go-template
             - github.com/stretchr/testify
+            - github.com/ovechkin-dm/mockio
