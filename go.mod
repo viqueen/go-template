@@ -4,7 +4,7 @@ go 1.24.2
 
 require (
 	github.com/ovechkin-dm/mockio/v2 v2.0.0-rc1
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 )
 
 require (
