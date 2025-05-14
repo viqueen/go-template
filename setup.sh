@@ -14,7 +14,7 @@ function template() {
   username=${1}
   project=${2}
 
-  files=(".mockery.yaml" "go.mod" "README.md")
+  files=("go.mod" "README.md")
 
   for file in "${files[@]}"; do
     perl -pi -e "s/viqueen/${username}/g" "${file}"
