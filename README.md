@@ -20,12 +20,6 @@
 make lint-fix
 ```
 
-- generate mocks
-
-```bash
-make mocks
-```
-
 - build it
 
 ```bash
